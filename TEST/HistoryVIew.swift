@@ -11,6 +11,7 @@ struct HistoryVIew: View {
     var body: some View {
         ZStack {
             Color("Greycolor").ignoresSafeArea()
+            
             Text("Not available right now, sorry!!")
         }
     }
