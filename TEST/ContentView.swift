@@ -14,23 +14,51 @@ struct ContentView: View {
         NavigationView{
             ZStack {
                 Color("Greycolor").ignoresSafeArea()
-                NavigationLink(destination: AnimationCircle(), label: {
-                    ZStack{
-                        Color("Greycolor").ignoresSafeArea()
-                        Circle()
-                            .foregroundColor(Color("blueforbuttons"))
-                            .frame(width: UIScreen.main.bounds.width / 2 * 1.25)
-                        Text("**Start** \nSession")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
+                
+                VStack {
+                    VStack{
+                        NavigationLink(destination: SettingsView(), label: {
+                            HStack{
+                                Spacer()
+                                SettingsViewLabelView()
+                                    .font(.system(size: 30))
+                                    .foregroundColor(.white)
+                                    .padding(.horizontal)
+                            }
+                        })
+                        
+                        NavigationLink(destination: HistoryVIew(), label: {
+                            HStack{
+                                Spacer()
+                                HistoryViewLabel()
+                                    .font(.system(size: 30))
+                                    .foregroundColor(.white)
+                                    .padding(.horizontal)
+                            }
+                        })
+                        
                     }
-                })
-                .onTapGesture(perform: {
-                    isClicked.toggle()
-                    if isClicked {
-                        // CODE FOR STARTING RECORDING ACTIVITY
-                    }
-                })
+                    .padding(.vertical)
+                    
+                    NavigationLink(destination: AnimationCircle(), label: {
+                        ZStack{
+                            Color("Greycolor").ignoresSafeArea()
+                            Circle()
+                                .foregroundColor(Color("blueforbuttons"))
+                                .frame(width: UIScreen.main.bounds.width / 2 * 1.25)
+                            Text("**Start** \nSession")
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                        }
+                        
+                    })
+                    .onTapGesture(perform: {
+                        isClicked.toggle()
+                        if isClicked {
+                            // CODE FOR STARTING RECORDING ACTIVITY
+                        }
+                    })
+                }
             }
         }
     }
