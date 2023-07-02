@@ -61,7 +61,7 @@ struct OnboardingView: View {
                     ForEach(pages.indices, id:\.self) { index in
                         
                         Circle()
-                            .fill(Color.white.opacity(index == currentPage ? 1.0 : 0.5))
+                            .fill(Color("Greycolor").opacity(index == currentPage ? 1.0 : 0.5))
                             .frame(width: 12, height: 12, alignment: .center)
                             .onTapGesture { animation = nil ; currentPage = index }
                         
