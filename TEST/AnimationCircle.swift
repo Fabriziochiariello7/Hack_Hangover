@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AnimationCircle: View {
+
     @State var gesture : String = ""
     @State var andata = true
     @State var scaleFlag : Double = 0
