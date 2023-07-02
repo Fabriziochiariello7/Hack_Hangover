@@ -14,7 +14,7 @@ struct ContentView: View {
         NavigationView{
             ZStack {
                 Color("Greycolor").ignoresSafeArea()
-                NavigationLink(destination: SettingsView(), label: {
+                NavigationLink(destination: AnimationCircle(), label: {
                     ZStack{
                         Color("Greycolor").ignoresSafeArea()
                         Circle()
