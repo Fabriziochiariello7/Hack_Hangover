@@ -20,10 +20,13 @@ struct sens8App: App {
     
     var body: some Scene {
         WindowGroup {
-            if !finishedOnBoarding {
-                OnboardingView(pages: pages)
-            } else{
-                ContentView()
+            ZStack{
+                Color("Greycolor").ignoresSafeArea()
+                if !finishedOnBoarding {
+                    OnboardingView(pages: pages)
+                } else{
+                    ContentView()
+                }
             }
         }
     }

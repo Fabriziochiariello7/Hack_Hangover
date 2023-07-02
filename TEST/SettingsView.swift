@@ -16,8 +16,10 @@ struct SettingsView: View {
             ZStack{
                 RoundedRectangle(cornerRadius: 20)
                 Text(phoneNumber)
-                    .foregroundColor(Color("Greycolor"))
+                    .foregroundColor(.black)
             }
+            .frame(width: UIScreen.main.bounds.width * 3 / 3, height: UIScreen.main.bounds.height / 10)
+                .padding()
         }
         else{
         ZStack{
@@ -25,8 +27,8 @@ struct SettingsView: View {
             VStack{
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
-                    TextField("Insert number of loved one...", text: $enteredNumber)
-                        .foregroundColor(Color("Greycolor"))
+                    TextField("Insert number of loved one...", text: $phoneNumber)
+                        .foregroundColor(.black)
                         .keyboardType(.numberPad)
                         .padding()
                 }
@@ -34,7 +36,6 @@ struct SettingsView: View {
                 .padding()
                 
                 Button(action: {
-                    enteredNumber = phoneNumber
                     finishedSaving.toggle()
                 }, label: {
                     ZStack{
