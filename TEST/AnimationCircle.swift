@@ -13,17 +13,18 @@ struct AnimationCircle: View{
             
                 Color("Greycolor").ignoresSafeArea()
             AnimationCircleComponent()
-                .foregroundColor(.blue.opacity(0.7))
+                .foregroundColor(Color("blueforbuttons").opacity(0.7))
             AnimationCircleComponent()
-                .foregroundColor(.blue.opacity(0.7))
+                .foregroundColor(Color("blueforbuttons").opacity(0.7))
             AnimationCircleComponent()
-                .foregroundColor(.blue.opacity(0.7))
+                .foregroundColor(Color("blueforbuttons").opacity(0.7))
         }
     }
 }
 
 struct AnimationCircleComponent: View {
 
+    let max = 50.0
     @State var gesture : String = ""
     @State var andata = true
     @State var scaleFlag : Double = 0
@@ -39,16 +40,17 @@ struct AnimationCircleComponent: View {
         Circle()
             .scaleEffect(0.6)
             .offset(x: pos.width, y: pos.height)
+            .shadow(radius: 10)
             .animation(.linear(duration: 1.0), value: pos)
         
             .onReceive(timer) { time in
                 if andata{
-                    pos.width =  Double.random(in: -40.0..<40.0)
-                    pos.height = Double.random(in: -40.0..<40.0)
+                    pos.width =  Double.random(in: -max..<max)
+                    pos.height = Double.random(in: -max..<max)
                         andata = false
                 }else{
-                    pos.width = Double.random(in: -40.0..<40.0)
-                    pos.height = Double.random(in: -40.0..<40.0)
+                    pos.width = Double.random(in: -max..<max)
+                    pos.height = Double.random(in: -max..<max)
                         andata = true
                 }
             }
