@@ -10,8 +10,6 @@ import SwiftUI
 struct AnimationCircle: View{
     var body: some View{
         ZStack{
-            
-                Color("Greycolor").ignoresSafeArea()
             AnimationCircleComponent()
                 .foregroundColor(Color("blueforbuttons").opacity(0.7))
             AnimationCircleComponent()

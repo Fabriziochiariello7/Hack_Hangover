@@ -18,6 +18,8 @@
 		69E073662A5176CA00D9414A /* SettingsViewLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E073652A5176CA00D9414A /* SettingsViewLabelView.swift */; };
 		69E073682A5178DF00D9414A /* HistoryVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E073672A5178DF00D9414A /* HistoryVIew.swift */; };
 		69E0736A2A51791000D9414A /* HistoryViewLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E073692A51791000D9414A /* HistoryViewLabel.swift */; };
+		9F1BBE082A517F190056C162 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BBE072A517F190056C162 /* ActivityView.swift */; };
+		9F1BBE0A2A5183EC0056C162 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BBE092A5183EC0056C162 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		69E073652A5176CA00D9414A /* SettingsViewLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewLabelView.swift; sourceTree = "<group>"; };
 		69E073672A5178DF00D9414A /* HistoryVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVIew.swift; sourceTree = "<group>"; };
 		69E073692A51791000D9414A /* HistoryViewLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewLabel.swift; sourceTree = "<group>"; };
+		9F1BBE072A517F190056C162 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		9F1BBE092A5183EC0056C162 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 			children = (
 				699F4EE02A277E3C0068FEB1 /* TESTApp.swift */,
 				69E073632A51702E00D9414A /* AnimationCircle.swift */,
+				9F1BBE072A517F190056C162 /* ActivityView.swift */,
+				9F1BBE092A5183EC0056C162 /* GameView.swift */,
 				699F4EE22A277E3C0068FEB1 /* ContentView.swift */,
 				6959343C2A508E9E00241180 /* OnBoardingView.swift */,
 				698195462A388E3000ED0529 /* MatchedView.swift */,
@@ -161,7 +167,9 @@
 				6959343D2A508E9E00241180 /* OnBoardingView.swift in Sources */,
 				69E0736A2A51791000D9414A /* HistoryViewLabel.swift in Sources */,
 				69E073682A5178DF00D9414A /* HistoryVIew.swift in Sources */,
+				9F1BBE082A517F190056C162 /* ActivityView.swift in Sources */,
 				698195452A37709300ED0529 /* SettingsView.swift in Sources */,
+				9F1BBE0A2A5183EC0056C162 /* GameView.swift in Sources */,
 				69E073662A5176CA00D9414A /* SettingsViewLabelView.swift in Sources */,
 				699F4EE32A277E3C0068FEB1 /* ContentView.swift in Sources */,
 				699F4EE12A277E3C0068FEB1 /* TESTApp.swift in Sources */,

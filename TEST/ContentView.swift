@@ -40,7 +40,7 @@ struct ContentView: View {
                     }
                     .padding(.vertical)
                     
-                    NavigationLink(destination: AnimationCircle(), label: {
+                    NavigationLink(destination: ActivityView(), label: {
                         ZStack{
                             Color("Greycolor").ignoresSafeArea()
                             Circle()
