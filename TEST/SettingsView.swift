@@ -13,13 +13,17 @@ struct SettingsView: View {
     @State var finishedSaving : Bool = false
     var body: some View {
         if finishedSaving{
-            ZStack{
-                RoundedRectangle(cornerRadius: 20)
-                Text(phoneNumber)
-                    .foregroundColor(.black)
+            ZStack {
+                Color("Greycolor").ignoresSafeArea()
+                ZStack{
+                    
+                    RoundedRectangle(cornerRadius: 20)
+                    Text(phoneNumber)
+                        .foregroundColor(.black)
+                }
+                .frame(width: UIScreen.main.bounds.width * 3 / 3, height: UIScreen.main.bounds.height / 10)
+            .padding()
             }
-            .frame(width: UIScreen.main.bounds.width * 3 / 3, height: UIScreen.main.bounds.height / 10)
-                .padding()
         }
         else{
         ZStack{
